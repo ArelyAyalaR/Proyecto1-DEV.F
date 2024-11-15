@@ -1,21 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benito</title>
+    <title>La Vida de [Nombre de tu Perro]</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background-color: #6c9cde;
+            color: white;
+            padding: 20px 0;
+        }
+
+        section {
+            margin: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #444;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #6c9cde;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5b88c4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #6c9cde;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <!-- Título Principal -->
     <header>
-        <h1>La Vida de Benito</h1>
+        <h1>La vida de Benito</h1>
     </header>
 
     <!-- Sección: Sobre mi Perro -->
     <section>
         <h2>¿Quién es Benito?</h2>
-        <p>Benito es un pug de 6 años que vive felizmente conmigo. Es conocido por su cáracter territorial.</p>
-        <img src="Benito_1.jpg" alt="Foto de Benito" width="300">
+        <p>Benito es un pug de 6 años que vive felizmente conmigo. Es conocido por su caracter territorial.</p>
+        <img src="./img/Benito_1.jpg" alt="Foto de Benito" width="300">
     </section>
+
+    <!-- Sección: Curiosidades -->
+    <section>
+        <h2>Datos Curiosos</h2>
+        <ul>
+            <li>Su comida favorita son los hígados.</li>
+            <li>Le encanta salir a pasear.</li>
+            <li>¡Tiene una mirada irresistible que consigue lo que quiere!</li>
+        </ul>
+    </section>
+
+    <!-- Sección: Galería de Fotos -->
+    <section>
+        <h2>Momentos Memorables</h2>
+        <img src="./img/Benito_2.jpg" alt="Foto de [Nombre] jugando" width="200">
+        <img src="./img/Benito_3.jpg" alt="Foto de [Nombre] descansando" width="200">
+        <img src="./img/Benito_4.jpg" alt="Foto de [Nombre] en el parque" width="200">
+    </section>
+
+    <!-- Sección: Enlaces -->
+    <section>
+        <h2>Más sobre Benito</h2>
+        <p>Sigue nuestras aventuras en redes sociales:</p>
+        <a href="https://www.instagram.com/arelyayalaa" target="_blank">Instagram de Arely</a>
+    </section>
+
+    <!-- Sección: Formulario -->
+    <section>
+        <h2>Déjanos un Mensaje</h2>
+        <form action="#" method="post">
+            <label for="nombre">Tu Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="mensaje">Tu Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024. Página dedicada con amor a Benito.</p>
+    </footer>
 </body>
 </html>
